@@ -30,7 +30,7 @@
 
       items.value = resItems.data.rows.map(item => ({
         ...item,
-        image: item.image ? `http://localhost:5000/uploads/${item.image}` : null
+        image: item.image ? `https://node-backend-production-d779.up.railway.app/uploads/${item.image}` : null
     }));
 
       console.log('Items:', items.value);  

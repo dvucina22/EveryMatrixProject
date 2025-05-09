@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://node-backend-production-d779.up.railway.app');
 
 const deref = (v) => (typeof v === 'object' && v.value ? v.value : v);
 

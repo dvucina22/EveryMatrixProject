@@ -5,7 +5,7 @@
         <div class="image-wrapper">
           <img
             v-if="item.image"
-            :src="`http://localhost:5000/uploads/${item.image}`"
+            :src="`https://node-backend-production-d779.up.railway.app/uploads/${item.image}`"
             alt="Item image"
             class="item-image"
           />

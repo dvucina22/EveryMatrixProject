@@ -3,7 +3,7 @@ import router from './router';
 import { useUserStore } from './stores/user';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://node-backend-production-d779.up.railway.app',
 });
 
 api.interceptors.response.use(

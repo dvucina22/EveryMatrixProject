@@ -19,7 +19,7 @@
     methods: {
     async login({ email, password }) {
         try {
-            const response = await axios.post('http://localhost:5000/auth/login', { email, password });
+            const response = await axios.post('https://node-backend-production-d779.up.railway.app/auth/login', { email, password });
             const userStore = useUserStore();
             userStore.setUser(response.data);
             this.$router.push('/feed');

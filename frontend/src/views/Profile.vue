@@ -10,7 +10,7 @@
         <div class="profile-image-wrapper">
           <img 
             v-if="user.profile_picture" 
-            :src="`http://localhost:5000${user.profile_picture}`" 
+            :src="`https://node-backend-production-d779.up.railway.app${user.profile_picture}`" 
             alt="Profilna slika" 
             class="profile-image"
           />

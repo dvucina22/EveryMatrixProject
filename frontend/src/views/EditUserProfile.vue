@@ -78,7 +78,7 @@
               <div class="image-preview-container">
                 <div v-if="imagePreview || form.profile_picture" class="image-preview">
                   <img 
-                    :src="imagePreview || `http://localhost:5000${form.profile_picture}`" 
+                    :src="imagePreview || `https://node-backend-production-d779.up.railway.app${form.profile_picture}`" 
                     alt="Pregled slike" 
                   />
                 </div>

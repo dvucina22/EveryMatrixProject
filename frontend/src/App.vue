@@ -62,7 +62,7 @@ function logout() {
               <p>{{ user.first_name }} {{ user.last_name }}</p>
             </div>
             <div class="profile-image">
-              <img v-if="user.profile_picture" :src="`http://localhost:5000${user.profile_picture}`" alt="Profile" />
+              <img v-if="user.profile_picture" :src="`https://node-backend-production-d779.up.railway.app${user.profile_picture}`" alt="Profile" />
               <div v-else class="no-picture">
                 <span>{{ user.first_name?.charAt(0) || '' }}{{ user.last_name?.charAt(0) || '' }}</span>
               </div>

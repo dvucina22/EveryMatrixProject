@@ -19,7 +19,7 @@
     methods: {
       async register({ email, password, firstName, lastName }) {
         try {
-          const response = await axios.post('http://localhost:5000/auth/register', {
+          const response = await axios.post('https://node-backend-production-d779.up.railway.app/auth/register', {
             email,
             password,
             firstName,
