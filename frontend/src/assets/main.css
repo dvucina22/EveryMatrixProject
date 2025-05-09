@@ -1,0 +1,154 @@
+@import './base.css';
+
+body {
+  background-color: #fff;
+
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(63, 96, 229);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+}
+
+.mainTitle {
+  font-size: 2rem;
+  color: rgb(63, 96, 229);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.loginTitle {
+  font-size: 1.5rem;
+  color: rgb(63, 96, 229);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRegLog > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.formRegLog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formRegLog input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(63, 96, 229);
+  width: 300px;
+}
+
+.formRegLog input:focus {
+  outline: none;
+  border: 2px solid rgb(63, 96, 229);
+}
+
+.formRegLog button {
+  background-color: rgb(63, 96, 229);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 200px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.feedPage {
+  padding: 20px;
+}
+
+.item-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+.items-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  background-color: #22222a;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+}
+
+.item-details {
+  color: white;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.item-card h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+
+.item-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.item-card strong {
+  font-size: 1.1rem;
+}
