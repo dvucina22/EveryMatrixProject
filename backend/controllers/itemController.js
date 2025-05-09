@@ -37,7 +37,7 @@ exports.getAllItems = async (req, res) => {
       price: parseFloat(item.price),
       category: item.category,
       user_id: item.user_id,
-      image: item.image ? `http://localhost:5000/uploads/${item.image}` : null,
+      image: item.image ? `https://node-backend-production-d779.up.railway.app/uploads/${item.image}` : null,
       country: item.country,
       city: item.city,
       expiration_date: item.expiration_date
